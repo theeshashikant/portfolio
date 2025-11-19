@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { ArrowRight, Download } from "lucide-react"
+import { ArrowRight, Github, Code } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { portfolioData } from "@/data/portfolio"
@@ -69,24 +69,24 @@ export function Hero() {
                                 />
                             </div>
 
-                            {/* Floating Badge 1 */}
+                            {/* Floating Badge 1 - GitHub */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.5 }}
                                 className="absolute -right-4 top-10 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-white/20"
                             >
-                                <span className="text-2xl">🚀</span>
+                                <Github size={24} className="text-textPrimary" />
                             </motion.div>
 
-                            {/* Floating Badge 2 */}
+                            {/* Floating Badge 2 - LeetCode */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.7 }}
                                 className="absolute -left-4 bottom-10 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-white/20"
                             >
-                                <span className="text-2xl">💻</span>
+                                <Code size={24} className="text-orange-600" />
                             </motion.div>
                         </div>
                     </motion.div>
