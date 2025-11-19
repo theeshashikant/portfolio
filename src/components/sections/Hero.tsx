@@ -33,8 +33,7 @@ export function Hero() {
                         </div>
 
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display tracking-tight text-textPrimary text-balance">
-                            Hi, I'm {portfolioData.personal.name.split(' ')[0]} <br />
-                            <span className="text-textSecondary/60">Frontend Dev.</span>
+                            Hi, I'm {portfolioData.personal.name.split(' ')[0]}
                         </h1>
 
                         <p className="text-lg md:text-xl text-textSecondary max-w-xl text-balance leading-relaxed">
@@ -46,12 +45,6 @@ export function Hero() {
                                 <Link href="#projects">
                                     View My Work
                                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                                </Link>
-                            </Button>
-                            <Button variant="outline" size="lg" className="min-w-[160px]" asChild>
-                                <Link href={portfolioData.personal.resume} target="_blank">
-                                    Download CV
-                                    <Download className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
                         </div>
