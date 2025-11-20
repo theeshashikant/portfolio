@@ -81,18 +81,18 @@ export function About() {
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold font-display mb-4 text-textPrimary">
-                  My Development Philosophy
+                  My Design Philosophy
                 </h3>
                 <p className="text-textSecondary leading-relaxed">
-                  I believe that great software is born at the intersection of clean code, user-centric design, and performance optimization. Every line of code I write is aimed at creating a seamless experience for the end user.
+                  I believe that exceptional design is born at the intersection of creativity, strategy, and purpose. Every design I create tells a story and solves a real problem while delivering visual excellence that captivates and engages.
                 </p>
               </div>
               <div className="flex flex-col gap-3">
                 {[
-                  "User-First Approach",
-                  "Pixel-Perfect Implementation",
-                  "Accessible by Default",
-                  "Performance Obsessed"
+                  "Brand-First Thinking",
+                  "Strategic Visual Design",
+                  "User-Centered Approach",
+                  "Consistent Brand Identity"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <CheckCircle2 className="text-textPrimary shrink-0" size={20} />
