@@ -6,7 +6,7 @@ import { CheckCircle2 } from "lucide-react"
 
 export function About() {
   return (
-    <section id="about" className="py-20 bg-white/50">
+    <section id="about" className="py-20 bg-slateDark">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col gap-16">
 
@@ -51,7 +51,7 @@ export function About() {
               {portfolioData.about.features.map((feature, index) => (
                 <div
                   key={index}
-                  className="p-6 rounded-2xl bg-white border border-textPrimary/5 shadow-soft hover:shadow-lg transition-shadow duration-300"
+                  className="p-6 rounded-2xl bg-slateLight border border-textPrimary/10 shadow-soft hover:shadow-lg transition-shadow duration-300"
                 >
                   <div className="h-10 w-10 rounded-lg bg-beige flex items-center justify-center text-textPrimary mb-4">
                     <feature.icon size={20} />

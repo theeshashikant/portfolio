@@ -3,18 +3,19 @@
 @theme {
   --font-sans: "Inter", sans-serif;
   --font-display: "Geist", "Inter", sans-serif;
-  
-  --color-cream: #FFF7EE;
-  --color-beige: #F8EFE6;
-  --color-offwhite: #F4EDE3;
-  --color-skin: #EDE4DA;
-  --color-text-primary: #1A1A1A;
-  --color-text-secondary: #545454;
+
+  /* Light Grey Theme Colors - Sophisticated cool grey palette */
+  --color-grey-lightest: #F5F7FA;
+  --color-grey-light: #E8EBF0;
+  --color-grey-medium: #D1D5DB;
+  --color-accent-blue: #6366F1;
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #6B7280;
 }
 
 :root {
-  --background: #FFF7EE;
-  --foreground: #1A1A1A;
+  --background: #F5F7FA;
+  --foreground: #1F2937;
   --radius: 0.75rem;
 }
 
@@ -28,13 +29,13 @@ body {
 
 @layer utilities {
   .glass-effect {
-    @apply backdrop-blur-md bg-white/30 border border-white/20;
+    @apply backdrop-blur-md bg-white/60 border border-grey-medium/20;
   }
-  
+
   .soft-shadow {
-    box-shadow: 0 4px 20px -2px rgba(26, 26, 26, 0.05);
+    box-shadow: 0 4px 20px -2px rgba(31, 41, 55, 0.08);
   }
-  
+
   .text-balance {
     text-wrap: balance;
   }
@@ -50,10 +51,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #EDE4DA;
+  background: #D1D5DB;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #DCC8B5;
+  background: #9CA3AF;
 }

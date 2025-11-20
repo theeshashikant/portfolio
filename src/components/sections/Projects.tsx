@@ -3,13 +3,13 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { motion } from "framer-motion"
-import { ExternalLink, Github } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 import Link from "next/link"
 import { portfolioData } from "@/data/portfolio"
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 bg-white/50">
+    <section id="projects" className="py-20 bg-slateMedium">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-4 max-w-2xl">
@@ -17,7 +17,7 @@ export function Projects() {
               Featured Projects
             </h2>
             <p className="text-lg text-textSecondary leading-relaxed">
-              Here are some of the projects I've worked on. Each project is a unique challenge that I've solved with code.
+              Here are some of my featured design projects. Each project showcases my creative approach and attention to detail.
             </p>
           </div>
 
@@ -56,17 +56,11 @@ export function Projects() {
                       ))}
                     </div>
                   </CardContent>
-                  <CardFooter className="gap-2 pt-0">
+                  <CardFooter className="pt-0">
                     <Button variant="outline" size="sm" className="w-full" asChild>
                       <Link href={project.demoLink} target="_blank">
                         <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
-                      </Link>
-                    </Button>
-                    <Button variant="ghost" size="sm" className="w-full" asChild>
-                      <Link href={project.codeLink} target="_blank">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
+                        View Project
                       </Link>
                     </Button>
                   </CardFooter>

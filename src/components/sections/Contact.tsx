@@ -3,13 +3,13 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter, Download, ExternalLink } from "lucide-react"
+import { Mail, MapPin, Phone, Linkedin, Twitter, Download, ExternalLink } from "lucide-react"
 import { portfolioData } from "@/data/portfolio"
 import Link from "next/link"
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-white to-cream/50">
+    <section id="contact" className="py-20 bg-gradient-to-b from-slateDark to-slateMedium">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col gap-16">
           {/* Header */}
@@ -133,16 +133,7 @@ export function Contact() {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-textPrimary mb-6 text-center">Connect on Social Media</h3>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-                  <Link
-                    href={portfolioData.personal.social.github}
-                    target="_blank"
-                    className="group flex items-center justify-center gap-3 p-4 rounded-xl bg-gradient-to-r from-gray-800 to-gray-900 text-white hover:shadow-lg transition-all duration-300"
-                  >
-                    <Github size={22} />
-                    <span className="font-semibold">GitHub</span>
-                  </Link>
-
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   <Link
                     href={portfolioData.personal.social.linkedin}
                     target="_blank"

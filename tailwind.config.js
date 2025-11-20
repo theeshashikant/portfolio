@@ -8,12 +8,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        cream: "#FFF7EE",
-        beige: "#F8EFE6",
-        offwhite: "#F4EDE3",
-        skin: "#EDE4DA",
-        textPrimary: "#1A1A1A",
-        textSecondary: "#545454",
+        // Light grey theme colors
+        greyLightest: "#F5F7FA",
+        greyLight: "#E8EBF0",
+        greyMedium: "#D1D5DB",
+        accentBlue: "#6366F1",
+        textPrimary: "#1F2937",
+        textSecondary: "#6B7280",
+
+        // Backward compatibility mapping
+        slateDark: "#F5F7FA",
+        slateMedium: "#E8EBF0",
+        slateLight: "#FFFFFF",
+        cream: "#FFFFFF",
+        beige: "#F5F7FA",
+        offwhite: "#FAFBFC",
+        skin: "#E8EBF0",
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],

@@ -31,7 +31,7 @@ export function Skills() {
                 <Card className="h-full hover:border-textPrimary/20 transition-colors cursor-default">
                   <CardContent className="p-4 flex items-center justify-between">
                     <span className="font-medium text-textPrimary">{skill.name}</span>
-                    <span className="text-xs text-textSecondary bg-beige px-2 py-1 rounded-full">
+                    <span className="text-xs text-textSecondary bg-slateMedium px-2 py-1 rounded-full">
                       {skill.category}
                     </span>
                   </CardContent>

@@ -48,7 +48,7 @@ export function Navbar() {
         <header
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out",
-                isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
+                isScrolled ? "bg-slateMedium/95 backdrop-blur-md shadow-lg py-4" : "bg-transparent py-6"
             )}
         >
             <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
@@ -57,7 +57,7 @@ export function Navbar() {
                     onClick={(e) => scrollToSection(e, "#hero")}
                     className="text-xl font-bold tracking-tight text-textPrimary font-display"
                 >
-                    Vaibhav.
+                    Shashikant.
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -91,7 +91,7 @@ export function Navbar() {
 
             {/* Mobile Navigation */}
             {isMobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-textPrimary/5 p-4 shadow-lg animate-in slide-in-from-top-5">
+                <div className="md:hidden absolute top-full left-0 right-0 bg-slateMedium border-b border-textPrimary/10 p-4 shadow-lg animate-in slide-in-from-top-5">
                     <nav className="flex flex-col gap-4">
                         {navItems.map((item) => (
                             <Link

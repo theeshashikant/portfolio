@@ -29,7 +29,7 @@ export function Experience() {
                                 className="relative pl-8 md:pl-12"
                             >
                                 {/* Timeline Dot */}
-                                <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-textPrimary ring-4 ring-beige" />
+                                <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-textPrimary ring-4 ring-slateMedium" />
 
                                 <div className="flex flex-col gap-2">
                                     <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4">

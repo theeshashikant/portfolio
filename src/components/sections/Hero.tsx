@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { ArrowRight, Github, Code } from "lucide-react"
+import { ArrowRight, Palette, Zap } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { portfolioData } from "@/data/portfolio"
@@ -27,7 +27,7 @@ export function Hero() {
                         transition={{ duration: 0.5 }}
                         className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left gap-6"
                     >
-                        <div className="inline-flex items-center rounded-full border border-textPrimary/5 bg-white/50 px-3 py-1 text-sm text-textSecondary backdrop-blur-sm">
+                        <div className="inline-flex items-center rounded-full border border-textPrimary/20 bg-slateLight/50 px-3 py-1 text-sm text-textSecondary backdrop-blur-sm">
                             <span className="flex h-2 w-2 rounded-full bg-green-500 mr-2 animate-pulse" />
                             {portfolioData.hero.badge}
                         </div>
@@ -69,24 +69,24 @@ export function Hero() {
                                 />
                             </div>
 
-                            {/* Floating Badge 1 - GitHub */}
+                            {/* Floating Badge 1 - Design */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.5 }}
-                                className="absolute -right-4 top-10 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-white/20"
+                                className="absolute -right-4 top-10 bg-slateLight/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-textPrimary/10"
                             >
-                                <Github size={24} className="text-textPrimary" />
+                                <Palette size={24} className="text-purple-600" />
                             </motion.div>
 
-                            {/* Floating Badge 2 - LeetCode */}
+                            {/* Floating Badge 2 - Creative */}
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.7 }}
-                                className="absolute -left-4 bottom-10 bg-white/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-white/20"
+                                className="absolute -left-4 bottom-10 bg-slateLight/80 backdrop-blur-md p-3 rounded-2xl shadow-lg border border-textPrimary/10"
                             >
-                                <Code size={24} className="text-orange-600" />
+                                <Zap size={24} className="text-orange-600" />
                             </motion.div>
                         </div>
                     </motion.div>
