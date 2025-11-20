@@ -7,8 +7,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Vaibhav Saini | Frontend Developer",
-  description: "Premium frontend developer portfolio showcasing modern web interfaces.",
+  title: "Shashikant | CEO at SocialMoon | Graphic Designer",
+  description: "CEO at SocialMoon - Leading creative innovation in graphic design and brand strategy. Expert in UI/UX design, branding, and visual storytelling.",
 };
 
 export default function RootLayout({
